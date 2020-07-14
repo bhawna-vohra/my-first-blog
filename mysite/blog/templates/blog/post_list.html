@@ -2,6 +2,13 @@
 <head>
 	 <title>Bhawna's Blog</title>
 <body>
+     {% for post in posts %}
+     <div>
+         <p>pulbished: {{ post.published_date }}</p>
+         <h2><a href="">{{ post.title }}</a></h2>
+         <p>{{ post.text|linebreaksbr }}</p>
+     </div>   
+	 {% endfor %}    
 	 <p>Hi There!</p>
 	 <p>It works!</p>
 </body>
